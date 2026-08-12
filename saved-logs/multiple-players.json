@@ -1,0 +1,319 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 0,
+				"displayName": "Shuriken Flip",
+				"id": "AkaliE",
+				"rawDescription": "GeneratedTip_Spell_AkaliE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Assassin's Mark",
+				"id": "AkaliP",
+				"rawDescription": "GeneratedTip_Passive_AkaliP_Description",
+				"rawDisplayName": "GeneratedTip_Passive_AkaliP_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 1,
+				"displayName": "Five Point Strike",
+				"id": "AkaliQ",
+				"rawDescription": "GeneratedTip_Spell_AkaliQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 0,
+				"displayName": "Perfect Execution",
+				"id": "AkaliR",
+				"rawDescription": "GeneratedTip_Spell_AkaliR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 0,
+				"displayName": "Twilight Shroud",
+				"id": "AkaliW",
+				"rawDescription": "GeneratedTip_Spell_AkaliW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 0.0,
+			"abilityPower": 0.0,
+			"armor": 23.0,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 72.80000305175781,
+			"attackRange": 125.0,
+			"attackSpeed": 0.625,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 610.0,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 1.7999999523162842,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 37.0,
+			"maxHealth": 610.0,
+			"moveSpeed": 345.0,
+			"omnivamp": 0.0,
+			"physicalLethality": 0.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 200.0,
+			"resourceRegenRate": 10.0,
+			"resourceType": "ENERGY",
+			"resourceValue": 200.0,
+			"spellVamp": 0.0,
+			"tenacity": 5.0
+		},
+		"currentGold": 50.0,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				{
+					"displayName": "Sudden Impact",
+					"id": 8143,
+					"rawDescription": "perk_tooltip_SuddenImpact",
+					"rawDisplayName": "perk_displayname_SuddenImpact"
+				},
+				{
+					"displayName": "Grisly Mementos",
+					"id": 8140,
+					"rawDescription": "perk_tooltip_GrislyMementos",
+					"rawDisplayName": "perk_displayname_GrislyMementos"
+				},
+				{
+					"displayName": "Ultimate Hunter",
+					"id": 8106,
+					"rawDescription": "perk_tooltip_UltimateHunter",
+					"rawDisplayName": "perk_displayname_UltimateHunter"
+				},
+				{
+					"displayName": "Overgrowth",
+					"id": 8451,
+					"rawDescription": "perk_tooltip_Overgrowth",
+					"rawDisplayName": "perk_displayname_Overgrowth"
+				},
+				{
+					"displayName": "Second Wind",
+					"id": 8444,
+					"rawDescription": "perk_tooltip_SecondWind",
+					"rawDisplayName": "perk_displayname_SecondWind"
+				}
+			],
+			"keystone": {
+				"displayName": "Electrocute",
+				"id": 8112,
+				"rawDescription": "perk_tooltip_Electrocute",
+				"rawDisplayName": "perk_displayname_Electrocute"
+			},
+			"primaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Resolve",
+				"id": 8400,
+				"rawDescription": "perkstyle_tooltip_7204",
+				"rawDisplayName": "perkstyle_displayname_7204"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 1,
+		"riotId": "REDplayer333HHH#000",
+		"riotIdGameName": "REDplayer333HHH",
+		"riotIdTagLine": "000",
+		"summonerName": "REDplayer333HHH#000",
+		"teamRelativeColors": true
+	},
+	"allPlayers": [
+		{
+			"championName": "Akali",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Scorchclaw Pup",
+					"itemID": 1101,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_1101_Description",
+					"rawDisplayName": "Item_1101_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 1,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Akali",
+			"rawSkinName": "game_character_displayname_Akali",
+			"respawnTimer": 0.0,
+			"riotId": "REDplayer333HHH#000",
+			"riotIdGameName": "REDplayer333HHH",
+			"riotIdTagLine": "000",
+			"runes": {
+				"keystone": {
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 0,
+				"deaths": 0,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "Akali",
+			"summonerName": "REDplayer333HHH#000",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Smite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Locke",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Locke",
+			"rawSkinName": "game_character_displayname_Locke",
+			"respawnTimer": 0.0,
+			"riotId": "Evelyn#00002",
+			"riotIdGameName": "Evelyn",
+			"riotIdTagLine": "00002",
+			"runes": {
+				"keystone": {
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 0,
+				"deaths": 0,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "Locke",
+			"summonerName": "Evelyn#00002",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teleport",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.021503500640392305
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "PRACTICETOOL",
+		"gameTime": 28.599462509155275,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Default"
+	}
+}

@@ -7,19 +7,19 @@ import (
 	"net/http"
 )
 
-func Give_data(localhost_endpoint string) (string, error) {
+func GiveData(localhostEndpoint string) (string, error) {
 	client := &http.Client{
 		Transport: &http.Transport{
 			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 		},
 	}
-	res, err := client.Get(localhost_endpoint + "/liveclientdata/allgamedata")
+	res, err := client.Get(localhostEndpoint + "/liveclientdata/allgamedata")
 	if err != nil {
-		return "", fmt.Errorf("Error accessing endpoint: %w", err)
+		return "", fmt.Errorf("error accessing endpoint: %w", err)
 	}
 	body, err := io.ReadAll(res.Body)
 	if err != nil {
-		return "", fmt.Errorf("Error reading body: %w", err)
+		return "", fmt.Errorf("error reading body: %w", err)
 	}
 	return string(body), nil
 }

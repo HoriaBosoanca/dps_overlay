@@ -23,10 +23,15 @@ type RECT struct {
 }
 
 func StartOverlay() {
-	leagueHandle, err := findLeagueHandle()
-	if err != nil {
-		fmt.Println(err)
-		return
+	var leagueHandle syscall.Handle
+	for {
+		var err error
+		leagueHandle, err = findLeagueHandle()
+		if err != nil {
+			fmt.Println(err)
+		} else {
+			break
+		}
 	}
 	rect := RECT{}
 	_, _, _ = funcGetWindowRect.Call(uintptr(leagueHandle), uintptr(unsafe.Pointer(&rect)))
@@ -58,26 +63,29 @@ func updateOverlay(leagueHandle syscall.Handle) {
 	}
 }
 
+var perWindowCallback = syscall.NewCallback(
+	func(hwnd syscall.Handle, lparam uintptr) uintptr {
+		//goland:noinspection GoVetUnsafePointer
+		leagueHandle := (*syscall.Handle)(unsafe.Pointer(lparam))
+		windowTitleUtf16 := make([]uint16, 256)
+		_, _, _ = funcGetWindowText.Call(
+			uintptr(hwnd),
+			uintptr(unsafe.Pointer(&windowTitleUtf16[0])),
+			uintptr(len(windowTitleUtf16)),
+		)
+		if strings.Contains(syscall.UTF16ToString(windowTitleUtf16), "League of Legends (TM) Client") {
+			*leagueHandle = hwnd
+			return 0
+		}
+		return 1
+	},
+)
+
 func findLeagueHandle() (syscall.Handle, error) {
-	var windowHandle syscall.Handle
-	perWindowCallback := syscall.NewCallback(
-		func(hwnd syscall.Handle, lparam uintptr) uintptr {
-			windowTitleUtf16 := make([]uint16, 256)
-			_, _, _ = funcGetWindowText.Call(
-				uintptr(hwnd),
-				uintptr(unsafe.Pointer(&windowTitleUtf16[0])),
-				uintptr(len(windowTitleUtf16)),
-			)
-			if strings.Contains(syscall.UTF16ToString(windowTitleUtf16), "League of Legends (TM) Client") {
-				windowHandle = hwnd
-				return 0
-			}
-			return 1
-		},
-	)
-	_, _, _ = funcEnumWindows.Call(perWindowCallback, 0)
-	if windowHandle == 0 {
-		return 0, errors.New("League window not found")
+	var leagueHandle syscall.Handle
+	_, _, _ = funcEnumWindows.Call(perWindowCallback, uintptr(unsafe.Pointer(&leagueHandle)))
+	if leagueHandle == 0 {
+		return 0, errors.New("league window not found")
 	}
-	return windowHandle, nil
+	return leagueHandle, nil
 }
