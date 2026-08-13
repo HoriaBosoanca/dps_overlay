@@ -2,6 +2,7 @@ package overlay
 
 import (
 	"errors"
+	"fmt"
 	"strings"
 	"syscall"
 	"time"
@@ -57,18 +58,21 @@ func RunOverlay() {
 }
 
 func waitForLeagueHandle() (leagueHandle syscall.Handle) {
+	firstErrPrinted := false
 	for {
 		var err error
 		leagueHandle, err = findLeagueHandle()
 		if err == nil {
-			// wait for league to initialize screen size before returning handle
-			time.Sleep(2 * time.Second)
-			leagueHandle, err = findLeagueHandle()
 			break
-		} else {
-			//fmt.Println(err)
 		}
+		if !firstErrPrinted {
+			firstErrPrinted = true
+			fmt.Println(err)
+		}
+		time.Sleep(1 * time.Second)
 	}
+	// wait for league to initialize screen size before returning handle
+	time.Sleep(2 * time.Second)
 	return leagueHandle
 }
 
