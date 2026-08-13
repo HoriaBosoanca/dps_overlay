@@ -2,9 +2,9 @@ package overlay
 
 import (
 	"errors"
-	"fmt"
 	"strings"
 	"syscall"
+	"time"
 	"unsafe"
 
 	rl "github.com/gen2brain/raylib-go/raylib"
@@ -16,51 +16,69 @@ var (
 	funcGetWindowText       = user32dll.NewProc("GetWindowTextW")
 	funcGetWindowRect       = user32dll.NewProc("GetWindowRect")
 	funcGetForegroundWindow = user32dll.NewProc("GetForegroundWindow")
+	funcIsWindow            = user32dll.NewProc("IsWindow")
 )
 
 type RECT struct {
 	Left, Top, Right, Bottom int32
 }
 
-func StartOverlay() {
-	var leagueHandle syscall.Handle
-	for {
-		var err error
-		leagueHandle, err = findLeagueHandle()
-		if err != nil {
-			fmt.Println(err)
-		} else {
-			break
-		}
-	}
-	rect := RECT{}
-	_, _, _ = funcGetWindowRect.Call(uintptr(leagueHandle), uintptr(unsafe.Pointer(&rect)))
+func RunOverlay() {
+	leagueHandle := waitForLeagueHandle()
 	rl.SetConfigFlags(
 		rl.FlagWindowTransparent |
 			rl.FlagWindowTopmost |
 			rl.FlagWindowUnfocused |
 			rl.FlagWindowMousePassthrough,
 	)
+	rect := RECT{}
+	_, _, _ = funcGetWindowRect.Call(uintptr(leagueHandle), uintptr(unsafe.Pointer(&rect)))
 	rl.InitWindow(rect.Right-rect.Left, rect.Bottom-rect.Top, "dps_overlay")
 	defer rl.CloseWindow()
 	rl.SetWindowPosition(int(rect.Left), int(rect.Top))
 	rl.SetTargetFPS(60)
-	updateOverlay(leagueHandle)
-}
-
-func updateOverlay(leagueHandle syscall.Handle) {
 	for !rl.WindowShouldClose() {
-		foreground, _, _ := funcGetForegroundWindow.Call()
-		if syscall.Handle(foreground) == leagueHandle {
+		// if handle is invalid (game ended), wait until next game to get the handle
+		if isHandleValid, _, _ := funcIsWindow.Call(uintptr(leagueHandle)); isHandleValid == 0 {
+			leagueHandle = waitForLeagueHandle()
+		}
+		// hide overlay if not tabbed into the game
+		if foreground, _, _ := funcGetForegroundWindow.Call(); syscall.Handle(foreground) == leagueHandle {
 			rl.ClearWindowState(rl.FlagWindowHidden)
 		} else {
 			rl.SetWindowState(rl.FlagWindowHidden)
 		}
+		// raylib drawing stuff
 		rl.BeginDrawing()
 		rl.ClearBackground(rl.Blank)
 		rl.DrawText("Overlay active", 20, 20, 20, rl.Green)
 		rl.EndDrawing()
 	}
+}
+
+func waitForLeagueHandle() (leagueHandle syscall.Handle) {
+	for {
+		var err error
+		leagueHandle, err = findLeagueHandle()
+		if err == nil {
+			// wait for league to initialize screen size before returning handle
+			time.Sleep(2 * time.Second)
+			leagueHandle, err = findLeagueHandle()
+			break
+		} else {
+			//fmt.Println(err)
+		}
+	}
+	return leagueHandle
+}
+
+func findLeagueHandle() (syscall.Handle, error) {
+	var leagueHandle syscall.Handle
+	_, _, _ = funcEnumWindows.Call(perWindowCallback, uintptr(unsafe.Pointer(&leagueHandle)))
+	if leagueHandle == 0 {
+		return 0, errors.New("league window not found")
+	}
+	return leagueHandle, nil
 }
 
 var perWindowCallback = syscall.NewCallback(
@@ -80,12 +98,3 @@ var perWindowCallback = syscall.NewCallback(
 		return 1
 	},
 )
-
-func findLeagueHandle() (syscall.Handle, error) {
-	var leagueHandle syscall.Handle
-	_, _, _ = funcEnumWindows.Call(perWindowCallback, uintptr(unsafe.Pointer(&leagueHandle)))
-	if leagueHandle == 0 {
-		return 0, errors.New("league window not found")
-	}
-	return leagueHandle, nil
-}
