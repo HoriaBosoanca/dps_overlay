@@ -26,6 +26,8 @@ type RECT struct {
 
 func RunOverlay() {
 	leagueHandle := waitForLeagueHandle()
+	initDisplay()
+	rl.SetTraceLogLevel(rl.LogNone)
 	rl.SetConfigFlags(
 		rl.FlagWindowTransparent |
 			rl.FlagWindowTopmost |
@@ -37,22 +39,23 @@ func RunOverlay() {
 	rl.InitWindow(rect.Right-rect.Left, rect.Bottom-rect.Top, "dps_overlay")
 	defer rl.CloseWindow()
 	rl.SetWindowPosition(int(rect.Left), int(rect.Top))
-	rl.SetTargetFPS(60)
+	rl.SetTargetFPS(3)
 	for !rl.WindowShouldClose() {
-		// if handle is invalid (game ended), wait until next game to get the handle
-		if isHandleValid, _, _ := funcIsWindow.Call(uintptr(leagueHandle)); isHandleValid == 0 {
-			leagueHandle = waitForLeagueHandle()
-		}
 		// hide overlay if not tabbed into the game
 		if foreground, _, _ := funcGetForegroundWindow.Call(); syscall.Handle(foreground) == leagueHandle {
 			rl.ClearWindowState(rl.FlagWindowHidden)
 		} else {
 			rl.SetWindowState(rl.FlagWindowHidden)
 		}
+		// if handle is invalid (game ended), wait until next game to get the handle
+		if isHandleValid, _, _ := funcIsWindow.Call(uintptr(leagueHandle)); isHandleValid == 0 {
+			leagueHandle = waitForLeagueHandle()
+			initDisplay()
+		}
 		// raylib drawing stuff
 		rl.BeginDrawing()
 		rl.ClearBackground(rl.Blank)
-		rl.DrawText("Overlay active", 20, 20, 20, rl.Green)
+		loopDisplay()
 		rl.EndDrawing()
 	}
 }
@@ -72,7 +75,7 @@ func waitForLeagueHandle() (leagueHandle syscall.Handle) {
 		time.Sleep(1 * time.Second)
 	}
 	// wait for league to initialize screen size before returning handle
-	time.Sleep(2 * time.Second)
+	time.Sleep(10 * time.Second)
 	return leagueHandle
 }
 
