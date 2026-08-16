@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/bin/assets/saved-logs/activeplayer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/calculator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/liveclient.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/lolstaticdata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/overlay/info_display.go" afterDir="false" />
+    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/game.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/request_data.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/dps_overlay.exe/go_build_dps_overlay_main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overlay/draw_overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/draw_overlay.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved-logs/multiple-players.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assets/saved-logs/allgamedata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/calculator.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/calculator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/liveclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/liveclient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/lolstaticdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/lolstaticdata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlay/draw_overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/overlay.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlay/info_display.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="14" />
+    <option name="cachedIndexableFilesCount" value="685" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -57,61 +53,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.4059647417585264E-173" />
-      <entry key="S2" value="6.130250986437109E-44" />
-      <entry key="S5" value="5.7729011621356425E-18" />
-      <entry key="S10" value="3.911340376486428E-9" />
-      <entry key="S30" value="0.005398672535771654" />
-      <entry key="S60" value="0.2056988311753498" />
-      <entry key="M2" value="1.409540954121744" />
-      <entry key="M5" value="7.506474300690049" />
-      <entry key="M10" value="23.046872362726184" />
-      <entry key="M15" value="41.05199865754937" />
-      <entry key="M30" value="95.8385691725647" />
-      <entry key="H1" value="190.8302920871236" />
-      <entry key="H2" value="344.3087942010911" />
-      <entry key="H4" value="575.1753076419354" />
-      <entry key="D1" value="1183.386652345126" />
-      <entry key="W1" value="1397.6227102554774" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000002110188075" />
+      <entry key="S60" value="1.0021429862425728" />
+      <entry key="M2" value="1.2895669707566324" />
+      <entry key="M5" value="8.990617755970874" />
+      <entry key="M10" value="30.914787033620936" />
+      <entry key="M15" value="51.126021390027056" />
+      <entry key="M30" value="98.07764745086038" />
+      <entry key="H1" value="180.46469432329124" />
+      <entry key="H2" value="340.2663639953946" />
+      <entry key="H4" value="605.9058950076425" />
+      <entry key="D1" value="1383.838753463901" />
+      <entry key="W1" value="1679.728393190495" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000001529962894" />
-      <entry key="MS500" value="1.0433447177853559" />
-      <entry key="S2" value="1.4562827442717259" />
-      <entry key="S5" value="1.7306234681719603" />
-      <entry key="S10" value="1.8547651541691446" />
-      <entry key="S30" value="1.9501202332103524" />
-      <entry key="S60" value="2.0207340193467007" />
-      <entry key="M2" value="2.316818013175779" />
-      <entry key="M5" value="3.6329763884801682" />
-      <entry key="M10" value="6.784130946627478" />
-      <entry key="M15" value="10.742408588468459" />
-      <entry key="M30" value="24.856160534523045" />
-      <entry key="H1" value="54.152101299826384" />
-      <entry key="H2" value="105.56360948680441" />
-      <entry key="H4" value="176.89723071151252" />
-      <entry key="D1" value="331.148631978277" />
-      <entry key="W1" value="379.00584924556557" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.3466278788708053E-117" />
+      <entry key="S5" value="2.439107426511524E-47" />
+      <entry key="S10" value="6.886602661403269E-24" />
+      <entry key="S30" value="3.363360772744361E-8" />
+      <entry key="S60" value="3.0719739859128817E-4" />
+      <entry key="M2" value="0.033090525213402264" />
+      <entry key="M5" value="0.8345745940253718" />
+      <entry key="M10" value="3.788868456701151" />
+      <entry key="M15" value="7.414180765222225" />
+      <entry key="M30" value="18.760503110295858" />
+      <entry key="H1" value="42.23742270093792" />
+      <entry key="H2" value="90.81735557611579" />
+      <entry key="H4" value="171.46663156668257" />
+      <entry key="D1" value="378.7206846354444" />
+      <entry key="W1" value="449.43438165921776" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.010452560688880608" />
-      <entry key="MS500" value="0.4192016843633864" />
-      <entry key="S2" value="1.1600854860285514" />
-      <entry key="S5" value="1.580300153134677" />
-      <entry key="S10" value="1.7724108587772367" />
-      <entry key="S30" value="1.9260616870880451" />
-      <entry key="S60" value="2.208176983698069" />
-      <entry key="M2" value="3.707818502961454" />
-      <entry key="M5" value="11.116712137514526" />
-      <entry key="M10" value="29.80379187414002" />
-      <entry key="M15" value="51.76462981853673" />
-      <entry key="M30" value="120.66081621459817" />
-      <entry key="H1" value="244.9467503719827" />
-      <entry key="H2" value="449.83908873493357" />
-      <entry key="H4" value="752.045099802022" />
-      <entry key="D1" value="1514.5265508740642" />
-      <entry key="W1" value="1776.627117535442" />
+      <entry key="MS100" value="0.009888723390392809" />
+      <entry key="MS500" value="0.39721720004805233" />
+      <entry key="S2" value="0.7938839309316524" />
+      <entry key="S5" value="0.911806753501677" />
+      <entry key="S10" value="0.9548857279809333" />
+      <entry key="S30" value="0.9847301630366092" />
+      <entry key="S60" value="0.9947744166314568" />
+      <entry key="M2" value="1.318236553183422" />
+      <entry key="M5" value="9.818417338929905" />
+      <entry key="M10" value="34.69158374663261" />
+      <entry key="M15" value="58.52512456118794" />
+      <entry key="M30" value="116.81890895057327" />
+      <entry key="H1" value="222.6788225882759" />
+      <entry key="H2" value="431.05731292337117" />
+      <entry key="H4" value="777.3470245266822" />
+      <entry key="D1" value="1762.5496835395345" />
+      <entry key="W1" value="2129.161101543153" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -205,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README.md" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="enemy stat estimation start + big refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy stat estimation start + big refactor" />
   </component>
 </project>

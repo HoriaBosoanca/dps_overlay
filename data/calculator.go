@@ -6,31 +6,30 @@ type Summoner struct {
 	LiveStats            LiveStats
 	ChampionName         string `json:"championName"`
 	ChampionImportedInfo ChampionImportedInfo
-	ChampionFinalData    ChampionFinalData
 	Level                int `json:"level"`
 	ItemIDs              []struct {
 		ItemID int `json:"itemID"`
 	} `json:"items"`
-	ItemImportedInfo []ItemImportedInfo
-}
-type ItemImportedInfo struct {
-	Armor           ItemImportedResistanceInfo `json:"armor"`
-	MagicResistance ItemImportedResistanceInfo `json:"magicResistance"`
-}
-type ItemImportedResistanceInfo struct {
-	Flat    float32 `json:"flat"`
-	Percent float32 `json:"percent"`
+	CalculatedStats CalculatedStats
 }
 type ChampionImportedInfo struct {
-	LoadedSuccessfully bool
-	Armor              ChampionImportedResistanceInfo `json:"armor"`
-	MagicResistance    ChampionImportedResistanceInfo `json:"magicResistance"`
+	LoadedSuccess   bool
+	Armor           ChampionImportedStatInfo `json:"armor"`
+	MagicResistance ChampionImportedStatInfo `json:"magicResistance"`
 }
-type ChampionImportedResistanceInfo struct {
+type ChampionImportedStatInfo struct {
 	Flat     float32 `json:"flat"`
 	PerLevel float32 `json:"perLevel"`
 }
-type ChampionFinalData struct {
+type ItemImportedInfo struct {
+	LoadSuccess     bool
+	Armor           ItemImportedStatInfo `json:"armor"`
+	MagicResistance ItemImportedStatInfo `json:"magicResistance"`
+}
+type ItemImportedStatInfo struct {
+	Flat float32 `json:"flat"`
+}
+type CalculatedStats struct {
 	Armor           float32 `json:"armor"`
 	MagicResistance float32 `json:"magicResistance"`
 }
@@ -69,14 +68,21 @@ type LiveStats struct {
 }
 
 // CalculateResistances https://wiki.leagueoflegends.com/en-us/Champion_statistic
-func CalculateResistances(enemies []*Summoner) {
-	for _, enemy := range enemies {
-		enemy.ChampionFinalData.Armor = enemy.ChampionImportedInfo.Armor.Flat + enemy.ChampionImportedInfo.Armor.PerLevel*float32(enemy.Level-1)*(0.7025+0.0175*float32(enemy.Level-1))
-		enemy.ChampionFinalData.MagicResistance = enemy.ChampionImportedInfo.MagicResistance.Flat + enemy.ChampionImportedInfo.MagicResistance.PerLevel*float32(enemy.Level-1)*(0.7025+0.0175*float32(enemy.Level-1))
+func calculateResistances(summoner []*Summoner) {
+	for _, enemy := range summoner {
+		enemy.CalculatedStats.Armor = enemy.ChampionImportedInfo.Armor.Flat
+		enemy.CalculatedStats.MagicResistance = enemy.ChampionImportedInfo.MagicResistance.Flat
+		for _, itemID := range enemy.ItemIDs {
+			item := ItemInfoCache[itemID.ItemID]
+			enemy.CalculatedStats.Armor += item.Armor.Flat
+			enemy.CalculatedStats.MagicResistance += item.MagicResistance.Flat
+		}
+		enemy.CalculatedStats.Armor += enemy.ChampionImportedInfo.Armor.PerLevel * float32(enemy.Level-1) * (0.7025 + 0.0175*float32(enemy.Level-1))
+		enemy.CalculatedStats.MagicResistance += enemy.ChampionImportedInfo.MagicResistance.PerLevel * float32(enemy.Level-1) * (0.7025 + 0.0175*float32(enemy.Level-1))
 	}
 }
 
-// AAdamage https://wiki.leagueoflegends.com/en-us/Armor
-func AAdamage(attacker Summoner, victim Summoner) float32 {
-	return attacker.LiveStats.AttackDamage / (1 + victim.ChampionFinalData.Armor/100)
+// autoAttackDamage https://wiki.leagueoflegends.com/en-us/Armor
+func autoAttackDamage(attacker Summoner, victim Summoner) float32 {
+	return attacker.LiveStats.AttackDamage / (1 + victim.CalculatedStats.Armor/100)
 }

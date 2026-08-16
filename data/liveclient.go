@@ -15,7 +15,7 @@ var client = &http.Client{
 }
 var liveClientDataUrl = "https://127.0.0.1:2999/liveclientdata"
 
-func GetPLayerRiotID() (string, error) {
+func getPLayerRiotID() (string, error) {
 	res, err := client.Get(liveClientDataUrl + "/activeplayer")
 	if err != nil {
 		return "", fmt.Errorf("error accessing endpoint: %w", err)
@@ -34,7 +34,7 @@ func GetPLayerRiotID() (string, error) {
 	return wrapper.RiotID, nil
 }
 
-func LoadSummoners() ([]Summoner, error) {
+func loadSummoners() ([]Summoner, error) {
 	res, err := client.Get(liveClientDataUrl + "/playerlist")
 	if err != nil {
 		return nil, fmt.Errorf("error accessing endpoint: %w", err)
@@ -49,11 +49,11 @@ func LoadSummoners() ([]Summoner, error) {
 	if err = json.Unmarshal(body, &summoners); err != nil {
 		return nil, fmt.Errorf("error parsing summoner list: %w", err)
 	}
-	LoadChampionData(summoners)
+	loadChampionInfo(summoners)
 	return summoners, nil
 }
 
-func FindTeams(playerRiotID string, allSummoners []Summoner) (player *Summoner, enemies []*Summoner, err error) {
+func findTeams(playerRiotID string, allSummoners []Summoner) (player *Summoner, enemies []*Summoner, err error) {
 	for i := range allSummoners {
 		if allSummoners[i].RiotID == playerRiotID {
 			player = &allSummoners[i]
@@ -70,7 +70,7 @@ func FindTeams(playerRiotID string, allSummoners []Summoner) (player *Summoner, 
 	return player, enemies, nil
 }
 
-func UpdateSummoners(oldSummoners []Summoner) error {
+func updateSummoners(oldSummoners []*Summoner) error {
 	res, err := client.Get(liveClientDataUrl + "/playerlist")
 	if err != nil {
 		return fmt.Errorf("error accessing endpoint: %w", err)
@@ -97,7 +97,7 @@ func UpdateSummoners(oldSummoners []Summoner) error {
 	return nil
 }
 
-func UpdatePlayerStats(player *Summoner) error {
+func updatePlayerStats(player *Summoner) error {
 	res, err := client.Get(liveClientDataUrl + "/activeplayer")
 	if err != nil {
 		return fmt.Errorf("error accessing endpoint: %w", err)
@@ -115,19 +115,4 @@ func UpdatePlayerStats(player *Summoner) error {
 	}
 	player.LiveStats = wrapper.LiveStats
 	return nil
-}
-
-func PrintData(endpoint string) {
-	res, err := client.Get(liveClientDataUrl + endpoint)
-	if err != nil {
-		fmt.Println("error accessing endpoint: %w", err)
-		return
-	}
-	defer res.Body.Close()
-	body, err := io.ReadAll(res.Body)
-	if err != nil {
-		fmt.Println("error reading body: %w", err)
-		return
-	}
-	fmt.Println(string(body))
 }

@@ -1,3 +1,11 @@
+# dps_overlay
+A simple damage prediction overlay for League of Legends
+
+## Upcoming features
+- more readable font
+- ability damage prediction
+- dps calculation?
+- item recommendation based on damage/dps
 ## Required settings
 ### For the overlay to work:
 - in-game settings->Video->General->Window Mode->Borderless
