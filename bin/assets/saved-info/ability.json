@@ -1,0 +1,117 @@
+{
+  "abilities": {
+    "Q": [
+      {
+        "effects": [
+          {
+            "leveling": {
+              "attribute": "Magic Damage",
+              "modifiers": [
+                {
+                  "values": [
+                    45,
+                    70,
+                    95,
+                    120,
+                    145
+                  ],
+                  "units": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "values": [
+                    65,
+                    65,
+                    65,
+                    65,
+                    65
+                  ],
+                  "units": [
+                    "% AD",
+                    "% AD",
+                    "% AD",
+                    "% AD",
+                    "% AD"
+                  ]
+                },
+                {
+                  "values": [
+                    60,
+                    60,
+                    60,
+                    60,
+                    60
+                  ],
+                  "units": [
+                    "% AP",
+                    "% AP",
+                    "% AP",
+                    "% AP",
+                    "% AP"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "W": [
+      {
+        "effects": [
+          {
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Shroud Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      5,
+                      5.5,
+                      6,
+                      6.5,
+                      7
+                    ],
+                    "units": [
+                      " seconds",
+                      " seconds",
+                      " seconds",
+                      " seconds",
+                      " seconds"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -22,18 +22,20 @@ func InitGame() {
 	initGlobals()
 	playerRiotID, err := getPLayerRiotID()
 	if err != nil {
-		fmt.Println("error getting player RiotID: ", err)
-		return
+		panic(fmt.Errorf("error getting player RiotID: %w", err))
 	}
 	Summoners, err = loadSummoners()
 	if err != nil {
-		fmt.Println("error getting player list: ", err)
+		panic(fmt.Errorf("error getting player list: %w", err))
 		return
 	}
 	Player, Enemies, err = findTeams(playerRiotID, Summoners)
 	if err != nil {
-		fmt.Println("error finding teams: ", err)
+		panic(fmt.Errorf("error finding teams: %w", err))
 		return
+	}
+	if Player == nil {
+		panic(fmt.Errorf("error finding player: %w", err))
 	}
 }
 
@@ -51,15 +53,25 @@ func LoopGame() {
 	loadItemInfo(Summoners)
 	calculateResistances(Enemies)
 	// AA damage
-	rl.DrawText("AA damage:", 20, 40, 20, rl.Yellow)
-	y := int32(40)
+	drawText("AA damage:", rl.Yellow)
 	for _, enemy := range Enemies {
-		y += 20
 		if !checkLoadSuccess(enemy) {
-			rl.DrawText(fmt.Sprintf("error loading info for %s's champion/items", enemy.ChampionName), 20, y, 20, rl.Red)
+			drawText(fmt.Sprintf("error loading info for %s's champion/items", enemy.ChampionName), rl.Red)
 			continue
 		}
 		text := fmt.Sprintf("%s: %.1f", enemy.ChampionName, autoAttackDamage(*Player, *enemy))
-		rl.DrawText(text, 20, y, 20, rl.Red)
+		drawText(text, rl.Red)
 	}
+	resetTextPos()
+}
+
+var Font rl.Font
+var pos rl.Vector2
+
+func drawText(text string, color rl.Color) {
+	pos.Y += 20
+	rl.DrawTextEx(Font, text, pos, 20, 0.5, color)
+}
+func resetTextPos() {
+	pos = rl.Vector2{X: 20, Y: 0}
 }

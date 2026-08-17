@@ -41,6 +41,8 @@ func RunOverlay() {
 	defer rl.CloseWindow()
 	rl.SetWindowPosition(int(rect.Left), int(rect.Top))
 	rl.SetTargetFPS(3)
+	data.Font = rl.LoadFont("../assets/fonts/JetBrainsMono-Bold.ttf")
+	defer rl.UnloadFont(data.Font)
 	for !rl.WindowShouldClose() {
 		// hide overlay if not tabbed into the game
 		if foreground, _, _ := funcGetForegroundWindow.Call(); syscall.Handle(foreground) == leagueHandle {
@@ -75,7 +77,7 @@ func waitForLeagueHandle() (leagueHandle syscall.Handle) {
 		}
 		time.Sleep(1 * time.Second)
 	}
-	// wait for league to initialize screen size before returning handle
+	// wait for league to initialize screen size and start http server before returning handle
 	time.Sleep(10 * time.Second)
 	return leagueHandle
 }

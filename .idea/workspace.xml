@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/game.go" afterDir="false" />
+    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="accounts for item stats">
+      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/assets/saved-info/ability.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Akali.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assets/champions/Akali.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nunu.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assets/champions/NunuWillump.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/saved-logs/activeplayer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/saved-logs/allgamedata.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/calculator.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/calculator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/liveclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/liveclient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/game.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/lolstaticdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/lolstaticdata.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overlay/draw_overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/overlay.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overlay/info_display.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlay/overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/overlay.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="685" />
+    <option name="cachedIndexableFilesCount" value="686" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -47,6 +52,9 @@
     &quot;accountId&quot;: &quot;72d283d9-2b11-4440-a6eb-61695267f5a8&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../go/pkg/mod/github.com/gen2brain/raylib-go/raylib@v0.60.0/rtext.go" root0="SKIP_INSPECTION" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -56,58 +64,58 @@
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000002110188075" />
-      <entry key="S60" value="1.0021429862425728" />
-      <entry key="M2" value="1.2895669707566324" />
-      <entry key="M5" value="8.990617755970874" />
-      <entry key="M10" value="30.914787033620936" />
-      <entry key="M15" value="51.126021390027056" />
-      <entry key="M30" value="98.07764745086038" />
-      <entry key="H1" value="180.46469432329124" />
-      <entry key="H2" value="340.2663639953946" />
-      <entry key="H4" value="605.9058950076425" />
-      <entry key="D1" value="1383.838753463901" />
-      <entry key="W1" value="1679.728393190495" />
+      <entry key="S5" value="1.0000000007562593" />
+      <entry key="S10" value="1.0000275001688057" />
+      <entry key="S30" value="1.030184115444373" />
+      <entry key="S60" value="1.1737357632854357" />
+      <entry key="M2" value="1.4168162224355427" />
+      <entry key="M5" value="1.7046571343387495" />
+      <entry key="M10" value="1.8399067701012388" />
+      <entry key="M15" value="1.9084866845347113" />
+      <entry key="M30" value="3.1933233157617007" />
+      <entry key="H1" value="19.153380512852472" />
+      <entry key="H2" value="100.30055911860785" />
+      <entry key="H4" value="327.14909728918445" />
+      <entry key="D1" value="1324.3922089727646" />
+      <entry key="W1" value="1788.3025689990156" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.3466278788708053E-117" />
-      <entry key="S5" value="2.439107426511524E-47" />
-      <entry key="S10" value="6.886602661403269E-24" />
-      <entry key="S30" value="3.363360772744361E-8" />
-      <entry key="S60" value="3.0719739859128817E-4" />
-      <entry key="M2" value="0.033090525213402264" />
-      <entry key="M5" value="0.8345745940253718" />
-      <entry key="M10" value="3.788868456701151" />
-      <entry key="M15" value="7.414180765222225" />
-      <entry key="M30" value="18.760503110295858" />
-      <entry key="H1" value="42.23742270093792" />
-      <entry key="H2" value="90.81735557611579" />
-      <entry key="H4" value="171.46663156668257" />
-      <entry key="D1" value="378.7206846354444" />
-      <entry key="W1" value="449.43438165921776" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="1.091730885220468E-121" />
+      <entry key="S60" value="8.437634214598448E-61" />
+      <entry key="M2" value="2.407945069774882E-30" />
+      <entry key="M5" value="4.719700082195963E-12" />
+      <entry key="M10" value="7.211480047286729E-6" />
+      <entry key="M15" value="9.528050113421174E-4" />
+      <entry key="M30" value="0.15583520721606955" />
+      <entry key="H1" value="3.002479295157036" />
+      <entry key="H2" value="21.835283070568607" />
+      <entry key="H4" value="82.8576442658319" />
+      <entry key="D1" value="347.9761595611719" />
+      <entry key="W1" value="463.6285136637489" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.009888723390392809" />
-      <entry key="MS500" value="0.39721720004805233" />
-      <entry key="S2" value="0.7938839309316524" />
-      <entry key="S5" value="0.911806753501677" />
-      <entry key="S10" value="0.9548857279809333" />
-      <entry key="S30" value="0.9847301630366092" />
-      <entry key="S60" value="0.9947744166314568" />
-      <entry key="M2" value="1.318236553183422" />
-      <entry key="M5" value="9.818417338929905" />
-      <entry key="M10" value="34.69158374663261" />
-      <entry key="M15" value="58.52512456118794" />
-      <entry key="M30" value="116.81890895057327" />
-      <entry key="H1" value="222.6788225882759" />
-      <entry key="H2" value="431.05731292337117" />
-      <entry key="H4" value="777.3470245266822" />
-      <entry key="D1" value="1762.5496835395345" />
-      <entry key="W1" value="2129.161101543153" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975769252644544" />
+      <entry key="S5" value="0.999030065284253" />
+      <entry key="S10" value="0.9995403183978967" />
+      <entry key="S30" value="1.0292350190599462" />
+      <entry key="S60" value="1.1713739124210514" />
+      <entry key="M2" value="1.414030547043876" />
+      <entry key="M5" value="1.7027808698355436" />
+      <entry key="M10" value="1.8387971556642724" />
+      <entry key="M15" value="1.9086468348284515" />
+      <entry key="M30" value="3.3485135176155176" />
+      <entry key="H1" value="22.15370129725125" />
+      <entry key="H2" value="122.12900965280251" />
+      <entry key="H4" value="409.99406810261985" />
+      <entry key="D1" value="1672.3593376064312" />
+      <entry key="W1" value="2251.9293470899383" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -121,41 +129,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.dps_overlay.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build dps_overlay/main.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build lolhelper.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build main/.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/redpl/dps_overlay&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/redpl/lolhelper/main.go&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;go.vgo&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.dps_overlay.executor": "Run",
+    "Go Build.go build dps_overlay/main.executor": "Run",
+    "Go Build.go build lolhelper.executor": "Run",
+    "Go Build.go build main/.executor": "Run",
+    "Go Build.go build.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/redpl/dps_overlay/bin/assets/fonts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/redpl/lolhelper/main.go",
+    "settings.editor.selected.configurable": "go.vgo"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\redpl\dps_overlay\bin\assets\fonts" />
       <recent name="C:\Users\redpl\lolhelper\overlay" />
       <recent name="C:\Users\redpl\lolhelper\main" />
     </key>
@@ -202,6 +211,7 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="a" />
     <MESSAGE value="enemy stat estimation start + big refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy stat estimation start + big refactor" />
+    <MESSAGE value="accounts for item stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="accounts for item stats" />
   </component>
 </project>

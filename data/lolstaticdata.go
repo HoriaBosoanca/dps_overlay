@@ -58,6 +58,7 @@ func loadChampionInfo(summoners []Summoner) {
 		fileName := strings.ReplaceAll(summoners[i].ChampionName, " ", "")
 		fileName = strings.ReplaceAll(fileName, ".", "")
 		fileName = strings.ReplaceAll(fileName, "'", "")
+		fileName = strings.ReplaceAll(fileName, "&", "")
 		file, err := os.Open(fmt.Sprintf("../assets/champions/%s.json", fileName))
 		if err != nil {
 			fmt.Println("error opening champion file for ", summoners[i].ChampionName, ": ", err)
