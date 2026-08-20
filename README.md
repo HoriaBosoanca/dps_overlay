@@ -2,10 +2,15 @@
 A simple damage prediction overlay for League of Legends
 
 ## Upcoming features
-- more readable font
-- ability damage prediction
-- dps calculation?
-- item recommendation based on damage/dps
+- accounting for lethality/pen in ability damage predictions
+- auto-update for JSON file data for each new patch
+- item recommendation based on damage
+- dps calculation (attack speed/combos)
+- calibration for niche abilities (like passives) that don't work as intended
+## Used libraries
+- Go bindings for raylib: https://github.com/gen2brain/raylib-go
+- syscall package for interacting with Windows
+- lolstaticdata, a library that auto-generates JSON files with game data using https://wiki.leagueoflegends.com: https://github.com/meraki-analytics/lolstaticdata
 ## Required settings
 ### For the overlay to work:
 - in-game settings->Video->General->Window Mode->Borderless

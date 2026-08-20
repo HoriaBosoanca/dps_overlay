@@ -10,10 +10,10 @@ import (
 
 func checkLoadSuccess(summoner *Summoner) bool {
 	loadSuccess := true
-	if summoner.ChampionImportedInfo.LoadedSuccess == false {
+	if summoner.StaticChampionInfo.LoadedSuccess == false {
 		loadSuccess = false
 	}
-	for _, itemID := range summoner.ItemIDs {
+	for _, itemID := range summoner.LiveChampionInfo.ItemIDs {
 		if ItemInfoCache[itemID.ItemID].LoadSuccess == false {
 			loadSuccess = false
 		}
@@ -21,13 +21,13 @@ func checkLoadSuccess(summoner *Summoner) bool {
 	return loadSuccess
 }
 
-func loadItemInfo(summoners []Summoner) {
+func loadItemInfo(summoners []*Summoner) {
 	for i := range summoners {
-		for _, itemID := range summoners[i].ItemIDs {
+		for _, itemID := range summoners[i].LiveChampionInfo.ItemIDs {
 			if _, exists := ItemInfoCache[itemID.ItemID]; exists {
 				continue
 			}
-			ItemInfoCache[itemID.ItemID] = ItemImportedInfo{LoadSuccess: false}
+			ItemInfoCache[itemID.ItemID] = ItemInfo{LoadSuccess: false}
 			file, err := os.Open(fmt.Sprintf("../assets/items/%d.json", itemID.ItemID))
 			if err != nil {
 				fmt.Println("error opening item file for ", itemID.ItemID, ": ", err)
@@ -40,44 +40,40 @@ func loadItemInfo(summoners []Summoner) {
 				continue
 			}
 			var wrapper struct {
-				ImportedStats ItemImportedInfo `json:"stats"`
+				ItemInfo ItemInfo `json:"stats"`
 			}
 			if err = json.Unmarshal(body, &wrapper); err != nil {
 				fmt.Println("error parsing item data for ", itemID.ItemID, ": ", err)
 				continue
 			}
-			wrapper.ImportedStats.LoadSuccess = true
-			ItemInfoCache[itemID.ItemID] = wrapper.ImportedStats
+			wrapper.ItemInfo.LoadSuccess = true
+			ItemInfoCache[itemID.ItemID] = wrapper.ItemInfo
 		}
 	}
 }
 
-func loadChampionInfo(summoners []Summoner) {
+func loadStaticChampionInfo(summoners []*Summoner) {
 	for i := range summoners {
-		summoners[i].ChampionImportedInfo = ChampionImportedInfo{LoadedSuccess: false}
-		fileName := strings.ReplaceAll(summoners[i].ChampionName, " ", "")
+		summoners[i].StaticChampionInfo = StaticChampionInfo{LoadedSuccess: false}
+		fileName := strings.ReplaceAll(summoners[i].SummonerInfo.ChampionName, " ", "")
 		fileName = strings.ReplaceAll(fileName, ".", "")
 		fileName = strings.ReplaceAll(fileName, "'", "")
 		fileName = strings.ReplaceAll(fileName, "&", "")
 		file, err := os.Open(fmt.Sprintf("../assets/champions/%s.json", fileName))
 		if err != nil {
-			fmt.Println("error opening champion file for ", summoners[i].ChampionName, ": ", err)
+			fmt.Println("error opening champion file for ", summoners[i].SummonerInfo.ChampionName, ": ", err)
 			continue
 		}
 		body, err := io.ReadAll(file)
 		file.Close()
 		if err != nil {
-			fmt.Println("error reading champion file for ", summoners[i].ChampionName, ": ", err)
+			fmt.Println("error reading champion file for ", summoners[i].SummonerInfo.ChampionName, ": ", err)
 			continue
 		}
-		var wrapper struct {
-			ImportedStats ChampionImportedInfo `json:"stats"`
-		}
-		if err = json.Unmarshal(body, &wrapper); err != nil {
-			fmt.Println("error parsing champion data for ", summoners[i].ChampionName, ": ", err)
+		if err = json.Unmarshal(body, &summoners[i].StaticChampionInfo); err != nil {
+			fmt.Println("error parsing champion data for ", summoners[i].SummonerInfo.ChampionName, ": ", err)
 			continue
 		}
-		wrapper.ImportedStats.LoadedSuccess = true
-		summoners[i].ChampionImportedInfo = wrapper.ImportedStats
+		summoners[i].StaticChampionInfo.LoadedSuccess = true
 	}
 }

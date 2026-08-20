@@ -1,4 +1,4 @@
-package overlay
+package main
 
 import (
 	"dps_overlay/data"
@@ -25,9 +25,13 @@ type RECT struct {
 	Left, Top, Right, Bottom int32
 }
 
-func RunOverlay() {
+func runOverlay() {
 	leagueHandle := waitForLeagueHandle()
-	data.InitGame()
+	err := data.InitGame()
+	if err != nil {
+		fmt.Println(err)
+		leagueHandle = 0
+	}
 	rl.SetTraceLogLevel(rl.LogNone)
 	rl.SetConfigFlags(
 		rl.FlagWindowTransparent |
@@ -53,7 +57,12 @@ func RunOverlay() {
 		// if handle is invalid (game ended), wait until next game to get the handle
 		if isHandleValid, _, _ := funcIsWindow.Call(uintptr(leagueHandle)); isHandleValid == 0 {
 			leagueHandle = waitForLeagueHandle()
-			data.InitGame()
+			err = data.InitGame()
+			if err != nil {
+				fmt.Println(err)
+				leagueHandle = 0
+				continue
+			}
 		}
 		// raylib drawing stuff
 		rl.BeginDrawing()

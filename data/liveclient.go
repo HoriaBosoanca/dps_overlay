@@ -15,7 +15,7 @@ var client = &http.Client{
 }
 var liveClientDataUrl = "https://127.0.0.1:2999/liveclientdata"
 
-func getPLayerRiotID() (string, error) {
+func getPlayerRiotID() (string, error) {
 	res, err := client.Get(liveClientDataUrl + "/activeplayer")
 	if err != nil {
 		return "", fmt.Errorf("error accessing endpoint: %w", err)
@@ -34,7 +34,7 @@ func getPLayerRiotID() (string, error) {
 	return wrapper.RiotID, nil
 }
 
-func loadSummoners() ([]Summoner, error) {
+func loadSummonerInfo() ([]Summoner, error) {
 	res, err := client.Get(liveClientDataUrl + "/playerlist")
 	if err != nil {
 		return nil, fmt.Errorf("error accessing endpoint: %w", err)
@@ -45,17 +45,20 @@ func loadSummoners() ([]Summoner, error) {
 		return nil, fmt.Errorf("error reading body: %w", err)
 	}
 
-	var summoners []Summoner
-	if err = json.Unmarshal(body, &summoners); err != nil {
+	var summonerInfo []SummonerInfo
+	if err = json.Unmarshal(body, &summonerInfo); err != nil {
 		return nil, fmt.Errorf("error parsing summoner list: %w", err)
 	}
-	loadChampionInfo(summoners)
+	var summoners []Summoner
+	for _, info := range summonerInfo {
+		summoners = append(summoners, Summoner{SummonerInfo: info})
+	}
 	return summoners, nil
 }
 
 func findTeams(playerRiotID string, allSummoners []Summoner) (player *Summoner, enemies []*Summoner, err error) {
 	for i := range allSummoners {
-		if allSummoners[i].RiotID == playerRiotID {
+		if allSummoners[i].SummonerInfo.RiotID == playerRiotID {
 			player = &allSummoners[i]
 		}
 	}
@@ -63,14 +66,14 @@ func findTeams(playerRiotID string, allSummoners []Summoner) (player *Summoner, 
 		return nil, nil, fmt.Errorf("player with RiotID %s not found", playerRiotID)
 	}
 	for i := range allSummoners {
-		if allSummoners[i].Team != (*player).Team {
+		if allSummoners[i].SummonerInfo.Team != (*player).SummonerInfo.Team {
 			enemies = append(enemies, &allSummoners[i])
 		}
 	}
 	return player, enemies, nil
 }
 
-func updateSummoners(oldSummoners []*Summoner) error {
+func updateLiveChampionInfo(summoners []*Summoner) error {
 	res, err := client.Get(liveClientDataUrl + "/playerlist")
 	if err != nil {
 		return fmt.Errorf("error accessing endpoint: %w", err)
@@ -81,15 +84,15 @@ func updateSummoners(oldSummoners []*Summoner) error {
 		return fmt.Errorf("error reading body: %w", err)
 	}
 
-	var newSummoners []Summoner
-	if err = json.Unmarshal(body, &newSummoners); err != nil {
+	var liveChampionInfo []LiveChampionInfo
+	if err = json.Unmarshal(body, &liveChampionInfo); err != nil {
 		return fmt.Errorf("error parsing summoner list: %w", err)
 	}
-	for i := range oldSummoners {
-		for _, newSummoner := range newSummoners {
-			if oldSummoners[i].RiotID == newSummoner.RiotID {
-				oldSummoners[i].Level = newSummoner.Level
-				oldSummoners[i].ItemIDs = newSummoner.ItemIDs
+	for i := range summoners {
+		for _, champInfo := range liveChampionInfo {
+			if summoners[i].SummonerInfo.RiotID == champInfo.RiotID {
+				summoners[i].LiveChampionInfo.Level = champInfo.Level
+				summoners[i].LiveChampionInfo.ItemIDs = champInfo.ItemIDs
 				break
 			}
 		}
@@ -97,7 +100,7 @@ func updateSummoners(oldSummoners []*Summoner) error {
 	return nil
 }
 
-func updatePlayerStats(player *Summoner) error {
+func updateLivePlayerStats(player *Summoner) error {
 	res, err := client.Get(liveClientDataUrl + "/activeplayer")
 	if err != nil {
 		return fmt.Errorf("error accessing endpoint: %w", err)
@@ -107,12 +110,8 @@ func updatePlayerStats(player *Summoner) error {
 	if err != nil {
 		return fmt.Errorf("error reading body: %w", err)
 	}
-	var wrapper struct {
-		LiveStats LiveStats `json:"championStats"`
-	}
-	if err = json.Unmarshal(body, &wrapper); err != nil {
+	if err = json.Unmarshal(body, &player.LivePlayerStats); err != nil {
 		return fmt.Errorf("error parsing summoner stats: %w", err)
 	}
-	player.LiveStats = wrapper.LiveStats
 	return nil
 }

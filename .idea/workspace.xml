@@ -4,20 +4,689 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="accounts for item stats">
-      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/assets/saved-info/ability.json" afterDir="false" />
+    <list default="true" id="c8bf9cd5-910a-42ef-aea3-d004dd30c6a5" name="Changes" comment="font">
+      <change afterPath="$PROJECT_DIR$/build/templates/ability.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Akali.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assets/champions/Akali.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nunu.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assets/champions/NunuWillump.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/assets/saved-logs/activeplayer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/assets/saved-logs/allgamedata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Aatrox.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ahri.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Akali.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Akshan.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Alistar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ambessa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Amumu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Anivia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Annie.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Aphelios.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ashe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/AurelionSol.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Aurora.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Azir.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Bard.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Belveth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Blitzcrank.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Brand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Braum.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Briar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Caitlyn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Camille.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Cassiopeia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Chogath.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Corki.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Darius.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Diana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/DrMundo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Draven.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ekko.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Elise.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Evelynn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ezreal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Fiddlesticks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Fiora.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Fizz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Galio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Gangplank.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Garen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Gnar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Gragas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Graves.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Gwen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Hecarim.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Hwei.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Illaoi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Irelia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ivern.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Janna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/JarvanIV.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Jax.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Jayce.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Jhin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Jinx.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/KSante.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kaisa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kalista.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Karma.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Karthus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kassadin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Katarina.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kayle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kayn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kennen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Khazix.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kindred.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Kled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/KogMaw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Leblanc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/LeeSin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Leona.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Lillia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Lissandra.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Locke.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Lucian.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Lulu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Lux.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Malphite.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Malzahar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Maokai.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/MasterYi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Mel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Milio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/MissFortune.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/MonkeyKing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Mordekaiser.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Morgana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Naafiri.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nami.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nasus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nautilus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Neeko.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nidalee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nilah.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nocturne.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Nunu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Olaf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Orianna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ornn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Pantheon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Poppy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Pyke.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Qiyana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Quinn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Rakan.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Rammus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/RekSai.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Rell.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Renata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Renekton.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Rengar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Riven.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Rumble.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ryze.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Samira.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sejuani.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Senna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Seraphine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sett.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Shaco.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Shen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Shyvana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Singed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sivir.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Skarner.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Smolder.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sona.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Soraka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Swain.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Sylas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Syndra.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/TahmKench.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Taliyah.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Talon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Taric.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Teemo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Thresh.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Tristana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Trundle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Tryndamere.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/TwistedFate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Twitch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Udyr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Urgot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Varus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Vayne.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Veigar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Velkoz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Vex.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Vi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Viego.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Viktor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Vladimir.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Volibear.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Warwick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Xayah.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Xerath.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/XinZhao.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Yasuo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Yone.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Yorick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Yunara.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Yuumi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zaahen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zac.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zeri.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Ziggs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zilean.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zoe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions-full/Zyra.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Aatrox.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Aatrox.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ahri.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ahri.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Akali.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Akali.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Akshan.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Akshan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Alistar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Alistar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ambessa.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ambessa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Amumu.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Amumu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Anivia.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Anivia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Annie.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Annie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Aphelios.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Aphelios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ashe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ashe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/AurelionSol.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/AurelionSol.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Aurora.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Aurora.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Azir.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Azir.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Bard.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Bard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Belveth.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Belveth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Blitzcrank.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Blitzcrank.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Brand.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Brand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Braum.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Braum.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Briar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Briar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Caitlyn.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Caitlyn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Camille.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Camille.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Cassiopeia.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Cassiopeia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Chogath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Chogath.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Corki.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Corki.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Darius.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Darius.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Diana.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Diana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/DrMundo.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/DrMundo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Draven.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Draven.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ekko.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ekko.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Elise.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Elise.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Evelynn.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Evelynn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ezreal.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ezreal.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Fiddlesticks.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Fiddlesticks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Fiora.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Fiora.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Fizz.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Fizz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Galio.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Galio.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Gangplank.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Gangplank.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Garen.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Garen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Gnar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Gnar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Gragas.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Gragas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Graves.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Graves.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Gwen.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Gwen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Hecarim.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Hecarim.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Hwei.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Hwei.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Illaoi.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Illaoi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Irelia.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Irelia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ivern.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ivern.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Janna.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Janna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/JarvanIV.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/JarvanIV.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Jax.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Jax.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Jayce.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Jayce.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Jhin.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Jhin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Jinx.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Jinx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/KSante.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/KSante.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kaisa.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kaisa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kalista.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kalista.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Karma.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Karma.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Karthus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Karthus.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kassadin.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kassadin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Katarina.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Katarina.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kayle.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kayle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kayn.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kayn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kennen.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kennen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Khazix.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Khazix.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kindred.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kindred.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Kled.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Kled.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/KogMaw.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/KogMaw.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Leblanc.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Leblanc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/LeeSin.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/LeeSin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Leona.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Leona.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Lillia.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Lillia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Lissandra.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Lissandra.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Locke.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Locke.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Lucian.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Lucian.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Lulu.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Lulu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Lux.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Lux.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Malphite.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Malphite.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Malzahar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Malzahar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Maokai.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Maokai.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/MasterYi.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/MasterYi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Mel.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Mel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Milio.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Milio.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/MissFortune.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/MissFortune.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/MonkeyKing.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/MonkeyKing.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Mordekaiser.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Mordekaiser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Morgana.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Morgana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Naafiri.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Naafiri.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nami.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nami.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nasus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nasus.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nautilus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nautilus.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Neeko.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Neeko.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nidalee.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nidalee.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nilah.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nilah.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Nocturne.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Nocturne.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/NunuWillump.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/NunuWillump.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Olaf.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Olaf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Orianna.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Orianna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ornn.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ornn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Pantheon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Pantheon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Poppy.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Poppy.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Pyke.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Pyke.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Qiyana.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Qiyana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Quinn.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Quinn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Rakan.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Rakan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Rammus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Rammus.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/RekSai.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/RekSai.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Rell.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Rell.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Renata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Renata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Renekton.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Renekton.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Rengar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Rengar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Riven.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Riven.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Rumble.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Rumble.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ryze.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ryze.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Samira.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Samira.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sejuani.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sejuani.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Senna.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Senna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Seraphine.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Seraphine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sett.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sett.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Shaco.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Shaco.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Shen.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Shen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Shyvana.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Shyvana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Singed.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Singed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sion.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sion.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sivir.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sivir.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Skarner.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Skarner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Smolder.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Smolder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sona.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sona.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Soraka.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Soraka.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Swain.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Swain.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Sylas.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Sylas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Syndra.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Syndra.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/TahmKench.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/TahmKench.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Taliyah.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Taliyah.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Talon.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Talon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Taric.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Taric.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Teemo.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Teemo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Thresh.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Thresh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Tristana.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Tristana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Trundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Trundle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Tryndamere.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Tryndamere.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/TwistedFate.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/TwistedFate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Twitch.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Twitch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Udyr.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Udyr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Urgot.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Urgot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Varus.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Varus.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Vayne.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Vayne.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Veigar.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Veigar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Velkoz.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Velkoz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Vex.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Vex.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Vi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Viego.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Viego.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Viktor.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Viktor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Vladimir.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Vladimir.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Volibear.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Volibear.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Warwick.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Warwick.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Xayah.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Xayah.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Xerath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Xerath.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/XinZhao.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/XinZhao.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Yasuo.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Yasuo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Yone.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Yone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Yorick.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Yorick.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Yunara.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Yunara.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Yuumi.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Yuumi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zaahen.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zaahen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zac.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zac.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zed.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zeri.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zeri.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Ziggs.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Ziggs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zilean.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zilean.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zoe.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zoe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/champions/Zyra.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/champions/Zyra.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/fonts/JetBrainsMono-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/fonts/JetBrainsMono-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/fonts/JetBrainsMono-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/fonts/JetBrainsMono-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/fonts/JetBrainsMono-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1001.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1001.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1004.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1006.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1006.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1011.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1011.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1018.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1018.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1026.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1026.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1027.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1027.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1028.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1028.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1029.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1029.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1031.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1031.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1033.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1033.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1036.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1036.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1037.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1037.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1038.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1038.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1042.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1042.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1043.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1043.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1052.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1052.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1053.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1053.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1054.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1054.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1055.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1055.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1056.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1056.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1057.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1057.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1058.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1058.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1082.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1082.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1083.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1083.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1086.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1086.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1101.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1101.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1102.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1102.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1103.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1103.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1111.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1111.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1120.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1120.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1500.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1500.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1502.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1502.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1503.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1503.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1506.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1506.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1507.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1507.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1508.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1508.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1509.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1509.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1510.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1510.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1511.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1511.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1512.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1512.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1515.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1515.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/1524.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/1524.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2003.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2010.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2010.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2019.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2019.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2020.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2020.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2021.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2021.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2022.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2022.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2031.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2031.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2049.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2049.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2050.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2050.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2051.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2051.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2052.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2052.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2055.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2055.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2065.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2065.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2138.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2138.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2139.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2139.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2140.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2140.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2141.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2141.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2142.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2142.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2143.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2143.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2144.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2144.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2145.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2145.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2146.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2146.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2150.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2150.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2151.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2151.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2152.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2152.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220000.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220000.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220001.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220001.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220002.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220002.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220003.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220004.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220005.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220005.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220006.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220006.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/220007.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/220007.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/223005.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/223005.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/223039.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/223039.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/223069.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/223069.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/223172.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/223172.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/223185.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/223185.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/224004.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/224004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/224403.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/224403.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/226630.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/226630.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/228001.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/228001.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/228002.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/228002.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/228009.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/228009.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2420.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2420.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2421.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2421.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2422.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2422.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2501.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2501.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2502.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2502.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2503.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2503.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2504.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2504.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2508.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2508.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2510.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2510.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2512.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2512.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2517.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2517.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2520.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2520.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2522.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2522.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2523.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2523.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2524.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2524.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2525.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2525.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2526.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2526.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/2530.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/2530.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3003.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3004.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3004.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3006.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3006.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3008.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3008.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3009.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3009.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3020.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3020.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3024.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3024.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3026.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3026.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3031.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3031.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3032.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3032.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3033.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3033.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3035.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3035.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3036.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3036.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3040.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3040.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3041.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3041.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3042.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3042.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3044.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3044.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3046.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3046.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3047.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3047.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3050.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3050.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3051.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3051.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3053.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3053.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3057.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3057.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3065.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3065.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3066.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3066.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3067.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3067.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3068.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3068.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3070.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3070.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3071.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3071.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3072.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3072.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3073.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3073.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3074.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3074.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3075.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3075.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3076.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3076.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3077.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3077.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3078.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3078.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3082.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3082.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3083.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3083.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3084.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3084.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3085.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3085.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3086.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3086.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3087.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3087.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3089.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3089.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3091.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3091.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3094.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3094.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3097.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3097.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3100.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3100.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3102.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3102.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3107.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3107.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3108.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3108.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3109.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3109.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3110.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3110.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3111.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3111.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3112.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3112.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3113.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3113.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3114.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3114.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3115.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3115.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3116.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3116.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3118.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3118.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3119.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3119.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3121.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3121.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3123.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3123.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3124.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3124.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3133.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3133.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3134.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3134.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3135.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3135.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3137.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3137.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3139.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3139.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3140.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3140.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3142.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3142.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3143.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3143.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3144.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3144.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3145.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3145.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3146.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3146.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3147.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3147.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3152.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3152.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3153.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3153.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3155.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3155.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3156.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3156.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3157.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3157.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3158.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3158.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3161.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3161.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3165.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3165.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3168.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3168.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3170.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3170.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3171.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3171.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3172.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3172.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3173.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3173.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3174.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3174.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3175.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3175.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3177.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3177.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3179.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3179.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3181.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3181.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3184.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3184.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3190.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3190.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3211.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3211.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3222.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3222.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3302.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3302.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3330.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3330.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3340.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3340.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3348.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3348.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3363.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3363.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3364.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3364.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3400.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3400.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3430.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3430.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3504.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3504.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3508.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3508.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3513.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3513.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3599.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3599.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3742.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3742.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3748.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3748.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3801.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3801.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3802.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3802.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3803.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3803.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3814.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3814.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3865.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3865.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3866.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3866.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3867.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3867.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3869.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3869.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3870.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3870.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3871.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3871.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3876.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3876.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3877.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3877.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3901.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3901.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3902.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3902.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3903.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3903.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/3916.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/3916.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4003.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4003.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4005.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4005.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4011.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4011.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4015.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4015.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4016.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4016.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4017.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4017.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4401.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4401.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443054.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443054.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443055.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443055.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443056.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443056.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443058.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443058.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443059.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443059.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443060.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443060.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443061.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443061.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443062.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443062.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443063.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443063.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443064.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443064.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443069.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443069.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443079.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443079.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443080.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443080.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443081.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443081.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443090.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443090.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/443193.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/443193.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/444636.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/444636.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/444637.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/444637.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/444644.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/444644.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446632.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446632.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446656.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446656.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446667.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446667.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446671.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446671.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446691.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446691.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/446693.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/446693.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447100.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447100.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447101.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447101.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447102.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447102.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447103.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447103.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447104.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447104.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447105.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447105.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447106.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447106.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447107.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447107.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447108.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447108.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447109.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447109.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447110.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447110.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447112.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447112.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447113.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447113.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447114.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447114.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447115.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447115.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447116.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447116.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447118.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447118.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447119.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447119.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447120.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447120.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447121.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447121.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447122.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447122.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/447123.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/447123.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4628.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4628.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4629.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4629.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4630.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4630.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4632.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4632.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4633.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4633.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4642.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4642.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4645.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4645.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/4646.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/4646.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6333.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6333.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6609.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6609.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6610.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6610.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6616.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6616.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6617.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6617.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6620.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6620.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6621.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6621.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6631.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6631.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6653.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6653.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6655.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6655.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6657.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6657.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6660.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6660.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6662.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6662.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6664.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6664.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6665.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6665.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6670.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6670.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6672.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6672.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6673.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6673.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6675.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6675.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6676.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6676.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6690.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6690.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6692.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6692.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6694.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6694.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6695.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6695.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6696.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6696.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6697.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6697.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6698.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6698.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/6699.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/6699.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/8010.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/8010.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/items/8020.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/assets/items/8020.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assets/saved-info/ability.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/latest/dps_overlay.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/bin/dps_overlay.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/calculator.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/calculator.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/game.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/liveclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/liveclient.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/lolstaticdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/lolstaticdata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/overlay/overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/overlay/overlay.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +695,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="686" />
+    <option name="cachedIndexableFilesCount" value="689" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -63,59 +732,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000007562593" />
-      <entry key="S10" value="1.0000275001688057" />
-      <entry key="S30" value="1.030184115444373" />
-      <entry key="S60" value="1.1737357632854357" />
-      <entry key="M2" value="1.4168162224355427" />
-      <entry key="M5" value="1.7046571343387495" />
-      <entry key="M10" value="1.8399067701012388" />
-      <entry key="M15" value="1.9084866845347113" />
-      <entry key="M30" value="3.1933233157617007" />
-      <entry key="H1" value="19.153380512852472" />
-      <entry key="H2" value="100.30055911860785" />
-      <entry key="H4" value="327.14909728918445" />
-      <entry key="D1" value="1324.3922089727646" />
-      <entry key="W1" value="1788.3025689990156" />
+      <entry key="S2" value="1.0000085066073094" />
+      <entry key="S5" value="1.0142917528945552" />
+      <entry key="S10" value="1.221143145442422" />
+      <entry key="S30" value="4.492331612316056" />
+      <entry key="S60" value="10.938888691380436" />
+      <entry key="M2" value="22.406705273342958" />
+      <entry key="M5" value="45.21603544833539" />
+      <entry key="M10" value="69.81477512132182" />
+      <entry key="M15" value="91.49819290113996" />
+      <entry key="M30" value="147.55343286033" />
+      <entry key="H1" value="237.30587190985872" />
+      <entry key="H2" value="370.4916297679852" />
+      <entry key="H4" value="595.2920422249413" />
+      <entry key="D1" value="1747.4283148571499" />
+      <entry key="W1" value="2396.1125310875777" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.091730885220468E-121" />
-      <entry key="S60" value="8.437634214598448E-61" />
-      <entry key="M2" value="2.407945069774882E-30" />
-      <entry key="M5" value="4.719700082195963E-12" />
-      <entry key="M10" value="7.211480047286729E-6" />
-      <entry key="M15" value="9.528050113421174E-4" />
-      <entry key="M30" value="0.15583520721606955" />
-      <entry key="H1" value="3.002479295157036" />
-      <entry key="H2" value="21.835283070568607" />
-      <entry key="H4" value="82.8576442658319" />
-      <entry key="D1" value="347.9761595611719" />
-      <entry key="W1" value="463.6285136637489" />
+      <entry key="S2" value="3.6480551688106587E-186" />
+      <entry key="S5" value="1.4302089268197008E-74" />
+      <entry key="S10" value="2.586798273312934E-37" />
+      <entry key="S30" value="2.0090410335935183E-12" />
+      <entry key="S60" value="3.939358395766084E-6" />
+      <entry key="M2" value="0.006665589640396769" />
+      <entry key="M5" value="0.9049708547415722" />
+      <entry key="M10" value="6.613101573238334" />
+      <entry key="M15" value="14.37925826997726" />
+      <entry key="M30" value="36.27138798571681" />
+      <entry key="H1" value="68.70302595543332" />
+      <entry key="H2" value="108.81378368752871" />
+      <entry key="H4" value="168.72466445600824" />
+      <entry key="D1" value="470.6129372132724" />
+      <entry key="W1" value="634.0619304664344" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9526379980439373" />
-      <entry key="MS500" value="0.9903428719330246" />
-      <entry key="S2" value="0.9975769252644544" />
-      <entry key="S5" value="0.999030065284253" />
-      <entry key="S10" value="0.9995403183978967" />
-      <entry key="S30" value="1.0292350190599462" />
-      <entry key="S60" value="1.1713739124210514" />
-      <entry key="M2" value="1.414030547043876" />
-      <entry key="M5" value="1.7027808698355436" />
-      <entry key="M10" value="1.8387971556642724" />
-      <entry key="M15" value="1.9086468348284515" />
-      <entry key="M30" value="3.3485135176155176" />
-      <entry key="H1" value="22.15370129725125" />
-      <entry key="H2" value="122.12900965280251" />
-      <entry key="H4" value="409.99406810261985" />
-      <entry key="D1" value="1672.3593376064312" />
-      <entry key="W1" value="2251.9293470899383" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917167307382933" />
+      <entry key="S2" value="0.9979312049941896" />
+      <entry key="S5" value="1.013446426925482" />
+      <entry key="S10" value="1.2206177443719515" />
+      <entry key="S30" value="4.491601597744862" />
+      <entry key="S60" value="10.937977322828239" />
+      <entry key="M2" value="22.41236611297767" />
+      <entry key="M5" value="46.115576660335705" />
+      <entry key="M10" value="76.40731471257341" />
+      <entry key="M15" value="105.84571549050284" />
+      <entry key="M30" value="183.78170838155657" />
+      <entry key="H1" value="305.9671051042035" />
+      <entry key="H2" value="479.2721089089547" />
+      <entry key="H4" value="763.9908211394294" />
+      <entry key="D1" value="2218.029077120236" />
+      <entry key="W1" value="3030.1720994191396" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -129,39 +798,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.dps_overlay.executor": "Run",
-    "Go Build.go build dps_overlay/main.executor": "Run",
-    "Go Build.go build lolhelper.executor": "Run",
-    "Go Build.go build main/.executor": "Run",
-    "Go Build.go build.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.GoLinterPluginOnboarding": "true",
-    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
-    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
-    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/redpl/dps_overlay/bin/assets/fonts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/redpl/lolhelper/main.go",
-    "settings.editor.selected.configurable": "go.vgo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.dps_overlay.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build dps_overlay/main.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build lolhelper.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build main/.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/redpl/dps_overlay/bin/assets/fonts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/redpl/lolhelper/main.go&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.vgo&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\redpl\dps_overlay\bin\assets\fonts" />
@@ -169,19 +838,21 @@
       <recent name="C:\Users\redpl\lolhelper\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\redpl\dps_overlay\bin\assets" />
+      <recent name="C:\Users\redpl\dps_overlay\overlay" />
+      <recent name="C:\Users\redpl\dps_overlay\build" />
       <recent name="C:\Users\redpl\dps_overlay\bin" />
+      <recent name="C:\Users\redpl\dps_overlay\bin\assets" />
       <recent name="C:\Users\redpl\dps_overlay\data" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="dps_overlay" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="dps_overlay" />
-      <working_directory value="$PROJECT_DIR$/bin/latest" />
+      <working_directory value="$PROJECT_DIR$/build/bin" />
       <kind value="PACKAGE" />
-      <package value="dps_overlay/main" />
+      <package value="dps_overlay/overlay" />
       <directory value="$PROJECT_DIR$" />
-      <output_directory value="$PROJECT_DIR$/bin/latest" />
+      <output_directory value="$PROJECT_DIR$/build/bin" />
       <auto_managed_config_id value="$PROJECT_DIR$/main" />
       <method v="2" />
     </configuration>
@@ -212,6 +883,7 @@
     <MESSAGE value="a" />
     <MESSAGE value="enemy stat estimation start + big refactor" />
     <MESSAGE value="accounts for item stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="accounts for item stats" />
+    <MESSAGE value="font" />
+    <option name="LAST_COMMIT_MESSAGE" value="font" />
   </component>
 </project>

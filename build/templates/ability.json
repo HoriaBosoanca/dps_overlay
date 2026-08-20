@@ -1,0 +1,97 @@
+{
+  "abilities": {
+    "Q": [
+      {
+        "name": "Q1",
+        "effects": [
+          {
+            "description": "useless larp",
+            "leveling": [
+              {
+                "attribute": "(Total) Physical/Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      70,
+                      95,
+                      120,
+                      145
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "useless larp 2",
+            "leveling": []
+          }
+        ]
+      },
+      {
+        "name": "Q2 (elise)"
+      }
+    ]
+  }
+}
