@@ -117,15 +117,19 @@ func scaleStat(growth float32, level float32) float32 {
 }
 
 // https://wiki.leagueoflegends.com/en-us/Armor
-func damageMitigation(initialDamage float32, damageType string, victim Summoner) float32 {
+// https://wiki.leagueoflegends.com/en-us/Armor_penetration
+func damageMitigation(attacker Summoner, initialDamage float32, damageType string, victim Summoner) float32 {
 	switch damageType {
 	case "PHYSICAL_DAMAGE":
-		return initialDamage / (1 + victim.CalculatedStats.Armor/100)
+		effectiveArmor := max(0.0, victim.CalculatedStats.Armor*attacker.LivePlayerStats.Stats.ArmorPenetrationPercent-attacker.LivePlayerStats.Stats.PhysicalLethality)
+		return initialDamage / (1 + effectiveArmor/100)
 	case "MAGIC_DAMAGE":
-		return initialDamage / (1 + victim.CalculatedStats.MagicResistance/100)
+		effectiveMagicResist := max(0.0, victim.CalculatedStats.MagicResistance*attacker.LivePlayerStats.Stats.MagicPenetrationPercent-attacker.LivePlayerStats.Stats.MagicPenetrationFlat)
+		return initialDamage / (1 + effectiveMagicResist/100)
 	case "TRUE_DAMAGE":
 		return initialDamage
 	case "OTHER_DAMAGE":
+		// Handling mixed damage abilities isn't configured yet. Examples: Fizz Q
 		return 0.0
 	default:
 		return 0.0
@@ -155,7 +159,13 @@ func calculateResistances(summoner []*Summoner) {
 }
 
 func autoAttackDamage(attacker Summoner, victim Summoner) float32 {
-	return damageMitigation(attacker.LivePlayerStats.Stats.AttackDamage, "PHYSICAL_DAMAGE", victim)
+	return damageMitigation(attacker, attacker.LivePlayerStats.Stats.AttackDamage, "PHYSICAL_DAMAGE", victim)
+}
+
+func critDamage(attacker Summoner, victim Summoner) float32 {
+	return damageMitigation(attacker,
+		attacker.LivePlayerStats.Stats.AttackDamage*attacker.LivePlayerStats.Stats.CritDamage/100.0,
+		"PHYSICAL_DAMAGE", victim)
 }
 
 func abilityDamage(attacker Summoner, ability Ability, abilityLevel int, victim Summoner) float32 {
@@ -187,5 +197,5 @@ func abilityDamage(attacker Summoner, ability Ability, abilityLevel int, victim 
 			}
 		}
 	}
-	return damageMitigation(totalDamage, ability.DamageType, victim)
+	return damageMitigation(attacker, totalDamage, ability.DamageType, victim)
 }

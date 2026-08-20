@@ -2,11 +2,11 @@
 A simple damage prediction overlay for League of Legends
 
 ## Upcoming features
-- accounting for lethality/pen in ability damage predictions
 - auto-update for JSON file data for each new patch
 - item recommendation based on damage
 - dps calculation (attack speed/combos)
-- calibration for niche abilities (like passives) that don't work as intended
+- fixes for niche abilities that don't work as intended
+like passives, mixed damage types or damage ranges
 ## Used libraries
 - Go bindings for raylib: https://github.com/gen2brain/raylib-go
 - syscall package for interacting with Windows

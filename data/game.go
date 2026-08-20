@@ -55,6 +55,9 @@ func LoopGame() {
 		}
 		drawText(fmt.Sprintf("%s:", enemy.SummonerInfo.ChampionName), rl.Blue)
 		drawText(fmt.Sprintf("AA: %.0f", autoAttackDamage(*Player, *enemy)), rl.Yellow)
+		if Player.LivePlayerStats.Stats.CritChance > 0 {
+			drawText(fmt.Sprintf("Crit: %.0f", critDamage(*Player, *enemy)), rl.Yellow)
+		}
 		drawText(fmt.Sprintf("Q: %.0f", abilityDamage(*Player,
 			Player.StaticChampionInfo.Abilities.Q[0],
 			Player.LivePlayerStats.AbilityLevels.Q.AbilityLevel,
